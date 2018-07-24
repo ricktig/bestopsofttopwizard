@@ -18,13 +18,47 @@
 		<!-- Latest compiled and minified Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		
-		<!--Project CSS stylesheet-->
-        <link rel="stylesheet" href="css/main.css">
-		
 		<!--Bootstrap Toggle CSS stylesheet-->
-		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+		<!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
 
         <style>
+			@media (min-width:100px) and (max-width:600px)
+			{
+				h5{
+					font-size:1.0em!important;
+				}
+				
+				.sliderholder{
+					width:90%;
+				}
+
+				.slidertextholder{
+					font-size:1.2em;
+				}
+			}
+
+			@media (min-width:601px) and (max-width:900px)
+			{
+				.sliderholder{
+					width:60%;
+				}
+
+				.slidertextholder{
+					font-size:1.4em;
+				}
+			}		
+
+			@media (min-width:901px)
+			{
+				.sliderholder{
+					width:50%;
+				}
+				
+				.slidertextholder{
+					font-size:1.4em;
+				}
+			}
+
             body {
                 margin: 0;
 				padding: 0;
@@ -38,43 +72,86 @@
 				margin:10px 0 0 30px;
 			}
 			
+			.arrowholder{
+				margin: 20px auto 0;
+				width:40px;
+			}
+			
+			.card-header{
+				border-bottom:none;
+			}
+			
+			.card-header h5{
+				font-size:22px;
+				color:black;
+				text-align:center;
+				text-shadow: #eee 1px 1px;
+			}
+			
+			.card-body{
+				border-bottom:none;
+			}
+			
+			.collapse{
+				background-color:lightgrey;
+			}
+			
 			#headingOne{
-				background-image:url("img/header1.jpg");
+				background-image:url("img/img1header.jpg");
+				
+			}
+			
+			#bodyOne{
+				background-image:url("img/img1body.jpg");
 			}
 			
 			#headingTwo{
-				background-image:url("img/header2.jpg");
+				background-image:url("img/img2header.jpg");
+			}
+			
+			#bodyTwo{
+				background-image:url("img/img2body.jpg");
 			}
 			
 			#headingThree{
-				background-image:url("img/header3.jpg");
+				background-image:url("img/img3header.jpg");
+			}
+			
+			#bodyThree{
+				background-image:url("img/img3body.jpg");
 			}
 			
 			#headingFour{
-				background-image:url("img/header4.jpg");
+				background-image:url("img/img4header.jpg");
+			}
+			
+			#bodyFour{
+				background-image:url("img/img4body.jpg");
 			}
 			
 			#headingFive{
-				background-image:url("img/header5.jpg");
+				background-image:url("img/img5header.jpg");
 			}
 			
-			/* Bootstrap Toggle v2.2.2 corrections for Bootstrap 4*/
-			.toggle-off {
-				box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+			#bodyFive{
+				background-image:url("img/img5body.jpg");
 			}
-			.toggle.off {
-				border-color: rgba(0, 0, 0, .25);
-			}
-
-			.toggle-handle {
-				background-color: white;
-				border: thin rgba(0, 0, 0, .25) solid;
+			
+			.sliderholder{
+				padding: 10px 20px 0 20px;
+				margin: 100px auto 0;
+				background-color:rgba(0, 0, 0, 0.15);
 			}
 			
 			.slidercontainer{
-				width:100%;
 				border:1px solid black;
-				margin:10px 0;
+				margin:10px auto;
+			}
+			
+			.slidertextholder{
+				color:white;
+				line-height:1.1em;
+				margin-top:20px;
 			}
 			
 			.slidertextholder li{
@@ -84,45 +161,110 @@
 			}
 			
 			.card-body{
-			min-height:100px!important;
+				min-height:300px!important;
 			}
 			
 			#btnSelectionUpdate{
 				margin:20px;
 			}
 			
-        </style>
+			#howdrivejeepimageholder{
+				border:1px solid black;
+				margin: 0 auto;
+				width:300px;
+			}
+			
+			#resultscontainer{
+				margin:0 10%;
+			}
+			
+			#resultscontainer h2{
+				text-transform:uppercase;
+				font-size:2.8em;
+				font-weight:bold;
+			}
+			
+			.productcontainer{
+				float:left;
+				margin:20px 0;
+				border-bottom:2px solid black;
+				padding-bottom:40px;
+			}
+			
+			.productimage{
+				width:30%;
+				border:1px solid black;
+				float:left;
+				margin-right:20px;
+			}
+			
+			.producttext{
+				float:left;
+				width:30%;
+			}
+			
+			.producttext h3{
+				text-transform:uppercase;
+				font-weight:bold;
+			}
+			
+			.dashed{
+				list-style-type:none;
+				margin-left: 0;
+				padding-left: 20px;
+			}
+			
+			.dashed > li:before{
+				display:inline-block;
+				content: "\2014";
+				width: 22px;
+				margin-left: -22px;
+			}
+			
+			.btnlearnmore{
+				background-color:#FCD40A;
+				text-transform:uppercase;
+			}
+			
+			.techfeaturesholder
+			{
+				margin-left:1em;
+				border-left:1px solid black;
+				float:left;
+				width:27%;
+				padding:1em;
+			}
+			
+			.techfeaturesimage{
+				
+			}
+			
+			
+			
+
+		</style>
 		
 		<!--jQuery JS-->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		
 		<!--jQuery UI JS-->
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-		
-		<!-- JS Popper-->
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 		<!--Bootstrap JS-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		
-		<!--Bootstrap toggle-->
+		<!--Bootstrap Toggle JS-->
 		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
-		
-		<!--Local JS-->
-        <script src="js/main.js"></script>
-
-
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+     <div class="jumbotron">
       <div class="container">
-        <h1>Select Your Perfect Soft Top!</h1>
-        <p>Let us help you find that perfect soft top.  Answer a few easy questions and we'll recommend two top that will ...</p>
+        <h1 class="center">Select Your Perfect Soft Top!</h1>
+        <p class="center">Let us help you find that perfect soft top.  Answer a few easy questions and we'll recommend two top that will ...</p>
        </div>
     </div>
 
@@ -132,20 +274,25 @@
 			<div class="card">
 				<div class="card-header" id="headingOne">
 					<h5 class="mb-0">
-						<div class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Do you have a hard top now?
+						<div class="" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Do you have a factory hard top now?
 						</div>
 					</h5>
 				</div>
 
 				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body">
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" checked id="hardtoptoggle" data-toggle="toggle" data-on="Yes" data-off="No" data-onstyle="primary" data-offstyle="primary">
-								
-							</label>
+					<div class="card-body" id="bodyOne">
+						<div class="sliderholder">
+							<div id="hardtopyesnoslidercontainer" class="slidercontainer"></div>
+							<div id="hardtopyesnoslidertextholder" class="slidertextholder">
+									<span>No</span>
+									<span style="float:right">Yes</span>
+							</div>
+							<div class="arrowholder">
+								<img id="downarrowOne" src="img/downarrow.png"/>
+							</div>
 						</div>
+						
 					</div><!-- /card-body-->
 				</div>
 			</div><!-- /card-->
@@ -155,21 +302,26 @@
 				<div class="card-header" id="headingTwo">
 					<h5 class="mb-0">
 						<div class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-							What style of top do you prefer?
+							Which style of top do you prefer?
 						</div>
 					</h5>
 				</div>
 				
 				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-					<div class="card-body">
-						<div class="checkbox">
-							<label>
-								<input type="checkbox" checked id="styletoggle" data-toggle="toggle" data-on="Traditional" data-off="Slant-back" data-onstyle="primary" data-offstyle="primary" data-width="120">
-								
-							</label>
+					<div class="card-body" id="bodyTwo">
+						<div class="sliderholder">
+							<div id="styleslidercontainer" class="slidercontainer"></div>
+							<div id="styleslidertextholder" class="slidertextholder">
+								<span>Traditional</span>
+								<span style="float:right">Fast-Back</span>
+							</div>
+							<div class="arrowholder">
+								<img id="downarrowTwo" src="img/downarrow.png"/>
+							</div>
 						</div>
-					</div>
+					</div><!-- /card-body-->
 				</div>
+			</div><!-- /card-->
 			</div>
 		  
 			<!--Question 3-->
@@ -177,19 +329,23 @@
 				<div class="card-header" id="headingThree">
 					<h5 class="mb-0">
 						<div class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							How do you drive your Jeep?
+							How do you use your Jeep?
 						</div>
 					</h5>
 				</div>
 				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-					<div class="card-body">
-						<div id="howdrivejeepslidercontainer" class="slidercontainer"></div>
-						<div id="howdrivejeepslidertextholder">
-							<span style="text-align:left; width:33%;float:left">Daily Driver</span>
-							<span style="text-align:center; width:33%;float:left">Weekend Vehicle</span>
-							<span style="text-align:right; width:33%;float:left">Offroad Only</span>
+					<div class="card-body" id="bodyThree">
+						<div class="sliderholder">
+							<div id="howdrivejeepslidercontainer" class="slidercontainer"></div>
+							<div id="howdrivejeepslidertextholder" class="slidertextholder">
+								<span style="text-align:center; width:33%;float:left">Daily<br/> Driver</span>
+								<span style="text-align:center; width:33%;float:left">Weekend <br/>Vehicle</span>
+								<span style="text-align:center; width:33%;float:left">Off-road<br/> Only</span>
+							</div>
 						</div>
-						
+						<div class="arrowholder" style="margin-top:100px">
+							<img id="downarrowThree" src="img/downarrow.png"/>
+						</div>
 					</div>
 				</div>
 			</div><!-- /card-->
@@ -199,23 +355,34 @@
 				<div class="card-header" id="headingFour">
 					<h5 class="mb-0">
 						<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-							How important is it to you to fully open the soft top?
+							<!--How important is it to you to fully open the soft top?-->
+							Does the soft top have to fold down?
 						</div>
 					</h5>
 				</div>
 				<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-					<div class="card-body">
-						<div id="convertibilitylidercontainer" class="slidercontainer"></div>
-							<span style="text-align:left; width:33%;float:left">Not Important</span>
-							<span style="text-align:center; width:33%;float:left">I might take the roof off occasionally</span>
-							<span style="text-align:right; width:33%;float:left">It has to fold down!</span>
+					<div class="card-body" id="bodyFour">
+						<div class="sliderholder">
+							<div id="convertibilityslidercontainer" class="slidercontainer"></div>
+							<div id="convertibilitylidertextholder" class="slidertextholder" style="min-height:90px">
+								<span style="text-align:center; width:33%;float:left">Not Important</span>
+								<span style="text-align:center; width:33%;float:left">I might take the roof off occasionally</span>
+								<span style="text-align:center; width:33%;float:left">It has to fold down!</span>
+							</div>
+							<!-- Add this back in when question 5 becomes live
+							<div class="arrowholder">
+								<img id="downarrowFour" src="img/downarrow.png"/>
+							</div>-->
 						</div>
+						<br/>
+						<div style="text-align:center; margin:0 auto;"><button id="btnSelectionUpdate" type="button" class="btn">Submit</button></div>
 					</div>
 				</div>
 			</div><!-- /card-->
 
-			<!--Question 5-->
-			<div class="card">
+
+			<!--Question 5 - Not currently in use-->
+			<!--<div class="card">
 				<div class="card-header" id="headingFive">
 					<h5 class="mb-0">
 						<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -234,9 +401,9 @@
 			</div><!-- /card-->
 		</div><!-- /accordion-->
 		
-		<button id="btnSelectionUpdate" type="button" class="btn">Submit</button>
 		
-		<p>Here are your soft-top choices customized just for you:<p>
+	</div><!--/container-->
+
 		<!--results container-->
 		<div id="resultscontainer">
 			
@@ -279,6 +446,24 @@
 	
 	$(document).ready(function(){
 		//How Do You Drive Your Jeep slider setup
+		$("#hardtopyesnoslidercontainer").slider({
+			
+			min: 1,
+			max: 2,
+			value: 1,
+			step:1
+		});
+
+		//Style of top slider setup
+		$("#styleslidercontainer").slider({
+			
+			min: 1,
+			max: 2,
+			value: 1,
+			step:1
+		});
+		
+		//How drive Jeep slider setup
 		$("#howdrivejeepslidercontainer").slider({
 			
 			min: 1,
@@ -286,27 +471,92 @@
 			value: 1,
 			step:1
 		});
-
-		//How Much Convertibility Do You Want slider setup
-		$("#convertibilitylidercontainer").slider({
+		
+		//How drive Jeep slider setup
+		$("#convertibilityslidercontainer").slider({
 			
 			min: 1,
 			max: 3,
 			value: 1,
 			step:1
 		});
-
+		
+		
+		//Make down arrow close current collapse section and expand next collapse section
+		$("#downarrowOne").click(function()
+		{
+		
+			//$("#collapseOne").collapse('hide');
+			$("#collapseTwo").collapse('show');
+		});
+		
+		$("#downarrowTwo").click(function()
+		{
+		
+			//$("#collapseOne").collapse('toggle');
+			$("#collapseThree").collapse('show');
+		});
+		
+		
+		$("#downarrowThree").click(function()
+		{
+		
+			$("#collapseThree").collapse('hide');
+			$("#collapseFour").collapse('show');
+		});
+		
 		//Selection Update button click
 		$("#btnSelectionUpdate").click(function()
 		{
 			//define/initialize points array to zero scores
 			var pointsArray = [0,0,0,0,0];
 			
-			//Soft Top array positions - 0 = SFHT; 1 = TTPro; 2 = TTGlide; 3 = TTPlus; 4 = SNX
+			//Soft Top array positions - 0 = SFHT; 1 = TTPro; 2 = TTGlide; 3 = TTNXBase; 4 = STNX
 			
 			//create new object - adding product name info
-			var myProductNameArray = ["Sunrider for Hardtop", "Trektop Pro", "Trektop NX Glide", "Trektop NX", "Supertop NX"];
+			var myProductNameArray = ["Sunrider for Hardtop", "Trektop Pro", "Trektop NX Glide", "Trektop NX", "Supertop NX In Twill Fabric"];
 			
+			//create new product object array
+			var myProductObjectArray = 
+			[
+			{
+				name:"Sunrider for Hardtop",
+				htmldescription:"<ul class='dashed'><li>Adds a sunroof panel to your factory JK hard top for front seat passengers</li><li>In-seat operation&mdash;opens in less than 30 seconds</li><li>Great for urban areas&mdash;most secure option</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Best for sound insulation</li><li>Easiest installation</li></ul><a href='https://www.bestop.com/sunrider-for-hardtop/  target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				imageURL:"img/sfht.jpg", 
+				techfeatureimageURL: "img/sfhttechfeatures.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>35 - Black Diamond</li></ul>"
+			},
+			{
+				name:"Trektop Pro",
+				htmldescription:"<ul class='dashed'><li>Only soft top to feature rear glass windows</li><li>Easy to operate Sunrider sunroof feature for front passengers</li><li>Zipperless design&mdash;reliable and easy to use</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Great sound insulation</li><li>Most difficult installation</li></ul><a href='https://www.bestop.com/trektop-pro-hybrid-soft-top/target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				imageURL:"img/ttpro.jpg",
+				techfeatureimageURL: "img/ttprotechfeatures.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+			},
+			{
+				name:"Trektop NX Glide", 
+				htmldescription:"<ul class='dashed'><li>Fully convertible soft top</li><li>Sunrider sunroof feature for front and rear passengers</li><li>Limited access to rear cargo area</li><li>Good sound insulation</li><li>Average difficulty installation</li></ul><a href='https://www.bestop.com/new-trektop-nx-glide-convertible-soft-top/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button><a/>", 
+				imageURL:"img/nxglide.jpg", 
+				techfeatureimageURL: "img/ttnxglidetechfeatures.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+			},
+			{
+				name:"Trektop NX", 
+				htmldescription:"<ul class='dashed'><li>Fastback styling with angled back for that modern style</li><li>Top arch bar provides a tight fit to reduce flapping and minimize puddling</li><li>Our best multi-layer, premium fabric maintains its shape in all temperatures</li><li>With windows removed, it functions as a Safari Bikini top</li><li>Tinted windows provide protection from the sun</li></ul><a href='https://www.bestop.com/new-trektop-nx-plus-soft-top/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				imageURL:"img/ttnx.jpg", 
+				techfeatureimageURL: "img/ttnxtechfeatures.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+			},
+			{
+				name:"Supertop NX", 
+				htmldescription:"<ul class='dashed'><li>Exclusive Sunrider feature</li><li>Premium 28-oz. multi-layer fabric has excellent durability and appearance</li><li>Top arch bars and factory-style door surrounds</li><li>Tinted side and rear windows</li><li>Premium hardware is powder-coated for corrosion and scratch resistance</li></ul><a href='https://www.bestop.com/supertop-nx-soft-top-2/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				imageURL:"img/stnx.jpg", 
+				techfeatureimageURL: "img/stnxtechfeatures.jpg",
+				availableoptions: "<ul class='dashed'><li>01-Black</li><li>15-Black Denim</li><li>17 - Black Twill</li><li>35 - Black Diamond</li><li>37 - Spice</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+			}
+
+			]; //end myProductObject
+
 			//Style Question
 			//From JS Toggle library
 			//get value of Style from toggle change - 0 = Slant-back / 1 = Traditional
@@ -426,21 +676,30 @@
 			//build output array
 			for (var i = 0; i<myProductNameArray.length; i++)
 			{
-				object = {name: myProductNameArray[i], score: pointsArray[i]};
+				object = {name: myProductObjectArray[i].name, productimg: myProductObjectArray[i].imageURL, text: myProductObjectArray[i].htmldescription, techimg: myProductObjectArray[i].techfeatureimageURL, availableoptions:myProductObjectArray[i].availableoptions, landingurl: myProductObjectArray[i].landingURL, score: pointsArray[i]};
 				myResultsObject.push(object);
 			}
 			
-			//mySortedResultsObject = myResultsObject.sort(compare);
-			//console.log (mySortedResultsObject);
+			console.log (mySortedResultsObject);//output results object before sort
 			
-			var mySortedResultsObject = myResultsObject.sort(compare);
+			var mySortedResultsObject = myResultsObject.sort(compare);//sort descending using compare()
+			
+			console.log(mySortedResultsObject);//output results object after sort
 			
 			//build html output
-			var myResultsHTML = '';
+			//Title
+			var myResultsHTML = '<h2>Bestop Recommendations:</h2>';
 			//loop through myResultsObject
 			for(var i = 0; i<mySortedResultsObject.length; i++)
 			{
-				myResultsHTML += '<p>' + mySortedResultsObject[i].name + ' - ' + mySortedResultsObject[i].score + '</p>';
+				//calculate match percentage - product score / highest product score
+				myProductScore = Math.round(mySortedResultsObject[i].score / mySortedResultsObject[0].score*100);
+				console.log(mySortedResultsObject[i].score);
+				console.log(myProductScore);
+				//build individual results container html
+				//myResultsHTML += '<p>' + mySortedResultsObject[i].name + ' - ' + mySortedResultsObject[i].score + '</p>';
+				myResultsHTML += '<div class="productcontainer"><img class="productimage" src="' + mySortedResultsObject[i].productimg + '"/>' + '<div class="producttext"><h3>' + mySortedResultsObject[i].name + '<br/><span style="font-size:0.6em">' + myProductScore + '% match</h3>' + mySortedResultsObject[i].text + '</span></div><div class="techfeaturesholder"><span>Installation:</span><img class="techfeaturesimage" src="' + mySortedResultsObject[i].techimg + '"/><span>Color Options: ' + mySortedResultsObject[i].availableoptions + '</span></div></div>';
+				
 			}
 
 			$('#resultscontainer').html(myResultsHTML);
