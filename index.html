@@ -19,49 +19,15 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		
 		<!--Bootstrap Toggle CSS stylesheet-->
-		<!--<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">-->
+		<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 
         <style>
-			@media (min-width:100px) and (max-width:600px)
-			{
-				h5{
-					font-size:1.0em!important;
-				}
-				
-				.sliderholder{
-					width:90%;
-				}
 
-				.slidertextholder{
-					font-size:1.2em;
-				}
-			}
-
-			@media (min-width:601px) and (max-width:900px)
-			{
-				.sliderholder{
-					width:60%;
-				}
-
-				.slidertextholder{
-					font-size:1.4em;
-				}
-			}		
-
-			@media (min-width:901px)
-			{
-				.sliderholder{
-					width:50%;
-				}
-				
-				.slidertextholder{
-					font-size:1.4em;
-				}
-			}
 
             body {
                 margin: 0;
 				padding: 0;
+				max-width:1400px!important;
             }
 			
 			button {
@@ -73,73 +39,42 @@
 			}
 			
 			.arrowholder{
-				margin: 20px auto 0;
-				width:40px;
+				margin: 10px auto 0;
+				text-align:center;
+			}
+			
+			.arrowholder img{
+				width:110px;
+			}
+			
+			.container-fluid{
+				padding-left:0!important;
+				padding-right:0!important;
 			}
 			
 			.card-header{
 				border-bottom:none;
+				background:url("img/wizard_header.jpg") no-repeat;
 			}
 			
 			.card-header h5{
 				font-size:22px;
-				color:black;
+				color:white;
 				text-align:center;
-				text-shadow: #eee 1px 1px;
 			}
 			
 			.card-body{
 				border-bottom:none;
+				height:300px!important;
 			}
 			
 			.collapse{
 				background-color:lightgrey;
 			}
-			
-			#headingOne{
-				background-image:url("img/img1header.jpg");
-				
-			}
-			
-			#bodyOne{
-				background-image:url("img/img1body.jpg");
-			}
-			
-			#headingTwo{
-				background-image:url("img/img2header.jpg");
-			}
-			
-			#bodyTwo{
-				background-image:url("img/img2body.jpg");
-			}
-			
-			#headingThree{
-				background-image:url("img/img3header.jpg");
-			}
-			
-			#bodyThree{
-				background-image:url("img/img3body.jpg");
-			}
-			
-			#headingFour{
-				background-image:url("img/img4header.jpg");
-			}
-			
-			#bodyFour{
-				background-image:url("img/img4body.jpg");
-			}
-			
-			#headingFive{
-				background-image:url("img/img5header.jpg");
-			}
-			
-			#bodyFive{
-				background-image:url("img/img5body.jpg");
-			}
-			
+
 			.sliderholder{
 				padding: 10px 20px 0 20px;
-				margin: 100px auto 0;
+				margin: 80px auto 0;
 				background-color:rgba(0, 0, 0, 0.15);
 			}
 			
@@ -159,11 +94,7 @@
 				list-style-type:none;
 				margin:0 20px;
 			}
-			
-			.card-body{
-				min-height:300px!important;
-			}
-			
+
 			#btnSelectionUpdate{
 				margin:20px;
 			}
@@ -175,7 +106,7 @@
 			}
 			
 			#resultscontainer{
-				margin:0 10%;
+				margin:2% 10% 0 10%;
 			}
 			
 			#resultscontainer h2{
@@ -235,13 +166,222 @@
 				padding:1em;
 			}
 			
-			.techfeaturesimage{
-				
+			#submitholder{
+				text-align:center; 
+				margin:0 auto;
+				background-color:black;
+				border-radius:0.25rem;
 			}
 			
-			
+			.clearboth{
+				clear:both;
+			}
 			
 
+			@media (min-width:100px) and (max-width:500px)
+			{
+				h5{
+					font-size:1.0em!important;
+				}
+				
+				.sliderholder{
+					width:90%;
+				}
+
+				.slidertextholder{
+					font-size:1.2em;
+				}
+				
+				#bodyOne{
+					background:url("img/wizard_hardtop_500x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyTwo{
+					background:url("img/wizard_traditional_500x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyThree{
+					background:url("img/wizard_weekend_500x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyFour{
+					background:url("img/wizard_folded_500x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				.smalltext{
+					font-size:14px;
+				}
+				
+				#resultscontainer h2{
+					font-size:1.0em!important;
+				}
+				
+				.productimage{
+					float:none;
+					width:75%;
+				}
+				
+				.producttext{
+					float:none;
+					width:95%;
+				}
+				
+				.producttext h3{
+					font-size:1em!important;
+				}
+				
+				.producttext ul{
+					font-size:0.6em;
+				}
+				
+				.techfeaturesholder{
+					float:none;
+					font-size:0.6em;
+					margin:0;
+					width:100%;
+				}
+			}
+
+			@media (min-width:501px) and (max-width:900px)
+			{
+				.sliderholder{
+					width:80%;
+				}
+
+				.slidertextholder{
+					font-size:1.4em;
+				}
+				
+				#bodyOne{
+					background:url("img/wizard_hardtop_900x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyTwo{
+					background:url("img/wizard_traditional_900x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyThree{
+					background:url("img/wizard_weekend_900x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyFour{
+					background:url("img/wizard_folded_900x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				.smalltext{
+					font-size:14px;
+				}
+				
+				#resultscontainer h2{
+					font-size:1.6em!important;
+				}
+
+				.productimage{
+					float:none;
+					width:50%;
+				}
+				
+				.producttext{
+					float:none;
+					width:90%;
+				}
+				
+				.producttext h3{
+					font-size:1em!important;
+				}
+
+				.producttext ul{
+					font-size:0.8em;
+				}
+				
+				.techfeaturesholder{
+					float:none;
+					font-size:0.6em;
+					margin:0
+				}
+			}		
+
+			@media (min-width:901px) and (max-width:1200px)
+			{
+				.sliderholder{
+					width:50%;
+				}
+				
+				.slidertextholder{
+					font-size:1.4em;
+				}
+				
+				#bodyOne{
+					background:url("img/wizard_hardtop_1200x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyTwo{
+					background:url("img/wizard_traditional_1200x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyThree{
+					background:url("img/wizard_weekend_1200x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyFour{
+					background:url("img/wizard_folded_1200x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#resultscontainer h2{
+					font-size:1.6em!important;
+				}
+				
+				.producttext h3{
+					font-size:1em!important;
+				}
+
+				.producttext ul{
+					font-size:0.8em;
+				}
+			}
+			
+			@media (min-width:1201px) and (max-width:9999px)
+			{
+				.sliderholder{
+					width:50%;
+				}
+				
+				.slidertextholder{
+					font-size:1.4em;
+				}
+				
+				#bodyOne{
+					background:url("img/wizard_hardtop_1406x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyTwo{
+					background:url("img/wizard_traditional_1406x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+				
+				#bodyThree{
+					background:url("img/wizard_weekend_1406x300.jpg") no-repeat!important;
+					background-size:100%;
+				}
+
+				#bodyFour{
+					background:url("img/wizard_folded_1406x300.jpg") no-repeat!important;
+					background-size:100%;
+				}				
+			}
 		</style>
 		
 		<!--jQuery JS-->
@@ -255,20 +395,13 @@
 		
 		<!--Bootstrap Toggle JS-->
 		<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
-     <div class="jumbotron">
-      <div class="container">
-        <h1 class="center">Select Your Perfect Soft Top!</h1>
-        <p class="center">Let us help you find that perfect soft top.  Answer a few easy questions and we'll recommend two top that will ...</p>
-       </div>
-    </div>
-
-    <div class="container">
+	<!--header image-->
+	<img id="heroimg" class="img-fluid" src="img/wizard_header_1406x650.jpg">
+ 
+    <div class="container-fluid">
 		<div id="accordion">
 			<!-- Question 1-->
 			<div class="card">
@@ -280,8 +413,8 @@
 					</h5>
 				</div>
 
-				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-					<div class="card-body" id="bodyOne">
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body img-fluid img-responsive" id="bodyOne">
 						<div class="sliderholder">
 							<div id="hardtopyesnoslidercontainer" class="slidercontainer"></div>
 							<div id="hardtopyesnoslidertextholder" class="slidertextholder">
@@ -289,13 +422,13 @@
 									<span style="float:right">Yes</span>
 							</div>
 							<div class="arrowholder">
-								<img id="downarrowOne" src="img/downarrow.png"/>
+								<img id="downarrowOne" src="img/wizard_nextbutton_195x105.png"/>
 							</div>
 						</div>
 						
 					</div><!-- /card-body-->
 				</div>
-			</div><!-- /card-->
+			</div><!-- /question 1 card-->
 		  
 			<!--Question 2-->
 			<div class="card">
@@ -316,13 +449,12 @@
 								<span style="float:right">Fast-Back</span>
 							</div>
 							<div class="arrowholder">
-								<img id="downarrowTwo" src="img/downarrow.png"/>
+								<img id="downarrowTwo" src="img/wizard_nextbutton_195x105.png"/>
 							</div>
 						</div>
 					</div><!-- /card-body-->
 				</div>
-			</div><!-- /card-->
-			</div>
+			</div><!-- /question 2 card-->
 		  
 			<!--Question 3-->
 			<div class="card">
@@ -337,24 +469,25 @@
 					<div class="card-body" id="bodyThree">
 						<div class="sliderholder">
 							<div id="howdrivejeepslidercontainer" class="slidercontainer"></div>
-							<div id="howdrivejeepslidertextholder" class="slidertextholder">
+							<div id="howdrivejeepslidertextholder" class="slidertextholder smalltext">
 								<span style="text-align:center; width:33%;float:left">Daily<br/> Driver</span>
 								<span style="text-align:center; width:33%;float:left">Weekend <br/>Vehicle</span>
 								<span style="text-align:center; width:33%;float:left">Off-road<br/> Only</span>
 							</div>
+							<div class="arrowholder" style="margin-top:100px">
+								<img id="downarrowThree" src="img/wizard_nextbutton_195x105.png"/>
+							</div>
 						</div>
-						<div class="arrowholder" style="margin-top:100px">
-							<img id="downarrowThree" src="img/downarrow.png"/>
-						</div>
+
 					</div>
 				</div>
-			</div><!-- /card-->
+			</div><!-- /question 3 card-->
 
 			<!--Question 4-->
 			<div class="card">
 				<div class="card-header" id="headingFour">
 					<h5 class="mb-0">
-						<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+						<div class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 							<!--How important is it to you to fully open the soft top?-->
 							Does the soft top have to fold down?
 						</div>
@@ -364,7 +497,7 @@
 					<div class="card-body" id="bodyFour">
 						<div class="sliderholder">
 							<div id="convertibilityslidercontainer" class="slidercontainer"></div>
-							<div id="convertibilitylidertextholder" class="slidertextholder" style="min-height:90px">
+							<div id="convertibilitylidertextholder" class="slidertextholder smalltext" style="min-height:90px">
 								<span style="text-align:center; width:33%;float:left">Not Important</span>
 								<span style="text-align:center; width:33%;float:left">I might take the roof off occasionally</span>
 								<span style="text-align:center; width:33%;float:left">It has to fold down!</span>
@@ -375,40 +508,51 @@
 							</div>-->
 						</div>
 						<br/>
-						<div style="text-align:center; margin:0 auto;"><button id="btnSelectionUpdate" type="button" class="btn">Submit</button></div>
-					</div>
+						
 				</div>
-			</div><!-- /card-->
+			</div><!-- /question 4 card-->
 
 
 			<!--Question 5 - Not currently in use-->
 			<!--<div class="card">
-				<div class="card-header" id="headingFive">
+				<div class="card-header" id="headingFour">
 					<h5 class="mb-0">
 						<div class="collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-							Which region/climate do you live in?
+							<!--Question TBD
+							Does the soft top have to fold down?
 						</div>
 					</h5>
 				</div>
 				<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-					<div class="card-body">
-						Which region/climate do you live in?
-						<label class="checkbox-inline"><input type="checkbox" name ="climate" value="hothumid">Hot/Humid</label>
-						<label class="checkbox-inline"><input type="checkbox" name ="climate"value="coldsnowy">Cold/Snowy</label>
-						<label class="checkbox-inline"><input type="checkbox" name ="climate"value="rainy">Rainy</label>
+					<div class="card-body" id="bodyFive">
+						<div class="sliderholder">
+							<div id="convertibilityslidercontainer" class="slidercontainer"></div>
+							<div id="convertibilitylidertextholder" class="slidertextholder smalltext" style="min-height:90px">
+								<span style="text-align:center; width:33%;float:left">TBD</span>
+								<span style="text-align:center; width:33%;float:left">TBD</span>
+								<span style="text-align:center; width:33%;float:left">TBD</span>
+							</div>
+							
+							<div class="arrowholder">
+								<img id="downarrowFour" src="img/downarrow.png"/>
+							</div>
+						</div>
+						<br/>
+						<div style="text-align:center; margin:0 auto;"><button id="btnSelectionUpdate" type="button" class="btn">Submit</button></div>
 					</div>
 				</div>
 			</div><!-- /card-->
 		</div><!-- /accordion-->
 		
-		
-	</div><!--/container-->
+		<div id="submitholder"><button id="btnSelectionUpdate" type="button" class="btn">Submit</button></div>
+		</div>
+
 
 		<!--results container-->
 		<div id="resultscontainer">
 			
 		</div><!--/resultscontainer-->
-    </div> <!-- /container -->        
+    </div> <!-- /container-fluid -->        
 	<script>	
 	
 	//Soft Top array positions - 0 = SFHT; 1 = TTPro; 2 = TTGlide; 3 = TTPlus; 4 = SNX
@@ -445,6 +589,20 @@
 	var climateextreme = [0,0,0,0,0];
 	
 	$(document).ready(function(){
+		//start quiz - hero image click
+		$("#heroimg").click(function(){
+			$("#collapseOne").collapse('show');
+		});
+	
+		//test slider setup
+		$("#testslidercontainer").slider({
+			
+			min: 1,
+			max: 2,
+			value: 1,
+			step:1
+		});
+		
 		//How Do You Drive Your Jeep slider setup
 		$("#hardtopyesnoslidercontainer").slider({
 			
@@ -501,7 +659,7 @@
 		$("#downarrowThree").click(function()
 		{
 		
-			$("#collapseThree").collapse('hide');
+			//$("#collapseThree").collapse('hide');
 			$("#collapseFour").collapse('show');
 		});
 		
@@ -521,38 +679,43 @@
 			[
 			{
 				name:"Sunrider for Hardtop",
-				htmldescription:"<ul class='dashed'><li>Adds a sunroof panel to your factory JK hard top for front seat passengers</li><li>In-seat operation&mdash;opens in less than 30 seconds</li><li>Great for urban areas&mdash;most secure option</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Best for sound insulation</li><li>Easiest installation</li></ul><a href='https://www.bestop.com/sunrider-for-hardtop/  target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				htmldescription:"<ul class='dashed'><li>Adds a sunroof panel to your factory JK hard top for front seat passengers</li><li>In-seat operation&mdash;opens in less than 30 seconds</li><li>Great for urban areas&mdash;most secure option</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Best for sound insulation</li><li>Easiest installation</li></ul>", 
 				imageURL:"img/sfht.jpg", 
-				techfeatureimageURL: "img/sfhttechfeatures.jpg",
-				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>35 - Black Diamond</li></ul>"
+				techfeatureimageURL: "img/wizard_installicon_easy.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>35 - Black Diamond</li></ul>",
+				landingURL: "https://www.bestop.com/sunrider-for-hardtop"
 			},
 			{
 				name:"Trektop Pro",
-				htmldescription:"<ul class='dashed'><li>Only soft top to feature rear glass windows</li><li>Easy to operate Sunrider sunroof feature for front passengers</li><li>Zipperless design&mdash;reliable and easy to use</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Great sound insulation</li><li>Most difficult installation</li></ul><a href='https://www.bestop.com/trektop-pro-hybrid-soft-top/target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				htmldescription:"<ul class='dashed'><li>Only soft top to feature rear glass windows</li><li>Easy to operate Sunrider sunroof feature for front passengers</li><li>Zipperless design&mdash;reliable and easy to use</li><li>Great for daily driven Wranglers</li><li>Full access to rear cargo area in seconds</li><li>Great sound insulation</li><li>Most difficult installation</li></ul>", 
 				imageURL:"img/ttpro.jpg",
-				techfeatureimageURL: "img/ttprotechfeatures.jpg",
-				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+				techfeatureimageURL: "img/wizard_installicon_easy.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>",
+				landingURL: "https://www.bestop.com/trektop-pro-hybrid-soft-top"
 			},
 			{
 				name:"Trektop NX Glide", 
-				htmldescription:"<ul class='dashed'><li>Fully convertible soft top</li><li>Sunrider sunroof feature for front and rear passengers</li><li>Limited access to rear cargo area</li><li>Good sound insulation</li><li>Average difficulty installation</li></ul><a href='https://www.bestop.com/new-trektop-nx-glide-convertible-soft-top/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button><a/>", 
+				htmldescription:"<ul class='dashed'><li>Fully convertible soft top</li><li>Sunrider sunroof feature for front and rear passengers</li><li>Limited access to rear cargo area</li><li>Good sound insulation</li><li>Average difficulty installation</li></ul>", 
 				imageURL:"img/nxglide.jpg", 
-				techfeatureimageURL: "img/ttnxglidetechfeatures.jpg",
-				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+				techfeatureimageURL: "img/wizard_installicon_expert.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>",
+				landingURL: "https://www.bestop.com/new-trektop-nx-glide-convertible-soft-top"
 			},
 			{
 				name:"Trektop NX", 
-				htmldescription:"<ul class='dashed'><li>Fastback styling with angled back for that modern style</li><li>Top arch bar provides a tight fit to reduce flapping and minimize puddling</li><li>Our best multi-layer, premium fabric maintains its shape in all temperatures</li><li>With windows removed, it functions as a Safari Bikini top</li><li>Tinted windows provide protection from the sun</li></ul><a href='https://www.bestop.com/new-trektop-nx-plus-soft-top/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				htmldescription:"<ul class='dashed'><li>Fastback styling with angled back for that modern style</li><li>Top arch bar provides a tight fit to reduce flapping and minimize puddling</li><li>Our best multi-layer, premium fabric maintains its shape in all temperatures</li><li>With windows removed, it functions as a Safari Bikini top</li><li>Tinted windows provide protection from the sun</li></ul>", 
 				imageURL:"img/ttnx.jpg", 
-				techfeatureimageURL: "img/ttnxtechfeatures.jpg",
-				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+				techfeatureimageURL: "img/wizard_installicon_moderate.jpg",
+				availableoptions: "<ul class='dashed'><li>17 - Black Twill</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>",
+				landingURL: "https://www.bestop.com/new-trektop-nx-plus-soft-top"
 			},
 			{
 				name:"Supertop NX", 
-				htmldescription:"<ul class='dashed'><li>Exclusive Sunrider feature</li><li>Premium 28-oz. multi-layer fabric has excellent durability and appearance</li><li>Top arch bars and factory-style door surrounds</li><li>Tinted side and rear windows</li><li>Premium hardware is powder-coated for corrosion and scratch resistance</li></ul><a href='https://www.bestop.com/supertop-nx-soft-top-2/ target=\"_blank\"'><button class='btnlearnmore'>Learn More</button></a>", 
+				htmldescription:"<ul class='dashed'><li>Exclusive Sunrider feature</li><li>Premium 28-oz. multi-layer fabric has excellent durability and appearance</li><li>Top arch bars and factory-style door surrounds</li><li>Tinted side and rear windows</li><li>Premium hardware is powder-coated for corrosion and scratch resistance</li></ul>", 
 				imageURL:"img/stnx.jpg", 
-				techfeatureimageURL: "img/stnxtechfeatures.jpg",
-				availableoptions: "<ul class='dashed'><li>01-Black</li><li>15-Black Denim</li><li>17 - Black Twill</li><li>35 - Black Diamond</li><li>37 - Spice</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>"
+				techfeatureimageURL: "img/wizard_installicon_moderate.jpg",
+				availableoptions: "<ul class='dashed'><li>01 - Black</li><li>15 - Black Denim</li><li>17 - Black Twill</li><li>35 - Black Diamond</li><li>37 - Spice</li><li>68 - Crushed Red Pepper Twill</li><li>69 - Navy Blue Twill</li><li>70 - Granite Grey Twill</li><li>71 - Oak Tan Twill</li><li>74 - Pebble Beige Twill</li></ul>",
+				landingURL: "https://www.bestop.com/supertop-nx-soft-top-2"
 			}
 
 			]; //end myProductObject
@@ -560,7 +723,11 @@
 			//Style Question
 			//From JS Toggle library
 			//get value of Style from toggle change - 0 = Slant-back / 1 = Traditional
-			var varStyle = String($("#styletoggle").prop('checked'));
+			var varStyle = Number($("#styleslidercontainer").slider('option', 'value'));
+			
+		
+			
+			console.log('style:' + varStyle);
 			
 			//Slant-back style
 			if (varStyle === 'false') //add to points array [0, 3, 5, 5, 0] - Slant-back
@@ -584,7 +751,9 @@
 			//Driving Question
 			//Slider from jQuery UI library
 			//Get value of Driving type question - 1 = Daily Driver / 2 = Weekender / 3 = Offroader
-			var varDriving = $("#howdrivejeepslidercontainer").slider("value");
+			var varDriving = Number($("#howdrivejeepslidercontainer").slider('option', 'value'));
+			
+			console.log('driving:' + varDriving);
 
 			//Daily Driver - add to points array [5, 5, 2, 2, 2]
 			if (varDriving === 1)
@@ -616,7 +785,9 @@
 			//Open Air Question
 			//Slider from jQuery UI library
 			//Get value of Open Air question - 1 = Not Important / 2 = Occasionally / 3 = Must Have
-			var varConvertibility = $("#convertibilitylidercontainer").slider("value");
+			var varConvertibility = Number($("#convertibilityslidercontainer").slider('option', 'value'));
+			
+			console.log("convertibility: " + varConvertibility);
 			
 			//Not Important - add to points array [1, 1, 1, 1, 1]
 			if (varConvertibility === 1)
@@ -654,8 +825,11 @@
 			//Hardtop Question
 			//Toggle from JS Toggle library
 			//Get value from hardtop question - 0 = No / 1 = Yes
-			var varHardtop = String($("#hardtoptoggle").prop('checked'));			
-			//Remove Sunrider for Hardtop from list if true (array position 0)
+			var varHardtop = Number($("#hardtopyesnoslidercontainer").slider('option', 'value'));
+			
+			console.log('hardtop: ' + varHardtop);
+			
+			//Remove Sunrider for Hardtop from list if hardtop question is true (array position 0)
 			if (varHardtop === 'false')
 			{
 				//pop array position 0 (SFHT) off stack and shift results left 1
@@ -663,7 +837,8 @@
 				myProductNameArray.shift();//product name array
 			}
 
-			/*var myResultsObject = [
+			/*Test array
+			var myResultsObject = [
 				{name: "Sunrider for Hardtop", score: 10},
 				{name: "Trektop Pro", score:15},
 				{name: "Trektop NX Glide", score: 18},
@@ -680,11 +855,11 @@
 				myResultsObject.push(object);
 			}
 			
-			console.log (mySortedResultsObject);//output results object before sort
+			//console.log (mySortedResultsObject);//output results object before sort
 			
 			var mySortedResultsObject = myResultsObject.sort(compare);//sort descending using compare()
 			
-			console.log(mySortedResultsObject);//output results object after sort
+			//console.log(mySortedResultsObject);//output results object after sort
 			
 			//build html output
 			//Title
@@ -694,11 +869,12 @@
 			{
 				//calculate match percentage - product score / highest product score
 				myProductScore = Math.round(mySortedResultsObject[i].score / mySortedResultsObject[0].score*100);
-				console.log(mySortedResultsObject[i].score);
-				console.log(myProductScore);
+				if (myProductScore<0){myProductScore=0};//if product score is negative number, set to zero
+				//console.log(mySortedResultsObject[i].score);
+				//console.log(myProductScore);
 				//build individual results container html
 				//myResultsHTML += '<p>' + mySortedResultsObject[i].name + ' - ' + mySortedResultsObject[i].score + '</p>';
-				myResultsHTML += '<div class="productcontainer"><img class="productimage" src="' + mySortedResultsObject[i].productimg + '"/>' + '<div class="producttext"><h3>' + mySortedResultsObject[i].name + '<br/><span style="font-size:0.6em">' + myProductScore + '% match</h3>' + mySortedResultsObject[i].text + '</span></div><div class="techfeaturesholder"><span>Installation:</span><img class="techfeaturesimage" src="' + mySortedResultsObject[i].techimg + '"/><span>Color Options: ' + mySortedResultsObject[i].availableoptions + '</span></div></div>';
+				myResultsHTML += '<div class="productcontainer"><span style="clear:both"><img class="productimage" src="' + mySortedResultsObject[i].productimg + '"/></span>' + '<div class="producttext"><h3>' + mySortedResultsObject[i].name + '<br/><span style="font-size:0.6em">' + myProductScore + '% match</h3>' + mySortedResultsObject[i].text + '</span></div><div class="techfeaturesholder"><img class="techfeaturesimage" src="' + mySortedResultsObject[i].techimg + '"/><br>Color Options: ' + mySortedResultsObject[i].availableoptions + '</div>' + '<div class="text-center clearboth"><a href="' + mySortedResultsObject[i].landingurl + '" target=\"_blank\"><button type="button" class="btn btnlearnmore">Learn More</button></a></div></div>';
 				
 			}
 
