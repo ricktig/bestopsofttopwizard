@@ -864,13 +864,13 @@
 			{
 				$("#bodyOne").removeClass('one');
 				$("#bodyOne").addClass('zero');
-				console.log('no');
+				console.log(ui.value);
 			}
 			else
 			{
 				$("#bodyOne").removeClass('zero');
 				$("#bodyOne").addClass('one');
-				console.log('yes');
+				console.log(ui.value);
 			}
 		});//Question 1
 		
@@ -881,13 +881,13 @@
 			{
 				$("#bodyTwo").removeClass('one');
 				$("#bodyTwo").addClass('zero');
-				console.log('no');
+				console.log(ui.value);
 			}
 			else
 			{
 				$("#bodyTwo").removeClass('zero');
 				$("#bodyTwo").addClass('one');
-				console.log('yes');
+				console.log(ui.value);
 			}
 		});//Question 2
 		
@@ -900,19 +900,19 @@
 				$("#bodyThree").removeClass('one');
 				$("#bodyThree").removeClass('two');
 				$("#bodyThree").addClass('zero');
-				console.log('zero');
+				console.log(ui.value);
 				break;
 				case 1:
 				$("#bodyThree").removeClass('zero');
 				$("#bodyThree").removeClass('two');
 				$("#bodyThree").addClass('one');
-				console.log('one');
+				console.log(ui.value);
 				break;
 				case 2:
 				$("#bodyThree").removeClass('zero');
 				$("#bodyThree").removeClass('one');
 				$("#bodyThree").addClass('two');
-				console.log('two');
+				console.log(ui.value);
 				break;
 				
 			}
@@ -927,19 +927,19 @@
 				$("#bodyFour").removeClass('one');
 				$("#bodyFour").removeClass('two');
 				$("#bodyFour").addClass('zero');
-				console.log('zero');
+				console.log(ui.value);
 				break;
 				case 1:
 				$("#bodyFour").removeClass('zero');
 				$("#bodyFour").removeClass('two');
 				$("#bodyFour").addClass('one');
-				console.log('one');
+				console.log(ui.value);
 				break;
 				case 2:
 				$("#bodyFour").removeClass('zero');
 				$("#bodyFour").removeClass('one');
 				$("#bodyFour").addClass('two');
-				console.log('two');
+				console.log(ui.value);
 				break;
 				
 			}
@@ -1031,11 +1031,12 @@
 			//get value of Style from toggle change - 0 = Slant-back / 1 = Traditional
 			var varStyle = Number($("#styleslidercontainer").slider('option', 'value'));
 			
-			//console.log('Style: ' + varStyle);
+			console.log('Style: ' + varStyle);
 
 			//Slant-back style
-			if (varStyle === 'false') //add to points array [0, 3, 5, 5, 0] - Slant-back
+			if (varStyle === 0) //add to points array [0, 3, 5, 5, 0] - Slant-back
 			{
+				console.log('traditional');
 				for (var i = 0; i < slantbackArray.length; i++)
 				{
 					pointsArray[i] += slantbackArray[i];
@@ -1043,8 +1044,9 @@
 			}//end Slant-back points
 			
 			//Traditional style
-			if (varStyle === 'true') //add to points array [5, 2, 0, 0, 5] - Traditional
+			if (varStyle === 1) //add to points array [5, 2, 0, 0, 5] - Traditional
 			{
+				console.log('slantback');
 				for (var i = 0; i < traditionalArray.length; i++)
 				{
 					pointsArray[i] += traditionalArray[i];
@@ -1053,14 +1055,15 @@
 
 			//Driving Question
 			//Slider from jQuery UI library
-			//Get value of Driving type question - 1 = Daily Driver / 2 = Weekender / 3 = Offroader
-			var varDriving = Number($("#howdrivejeepslidercontainer").slider('option', 'value'));
+			//Get value of Driving type question - 0 = Daily Driver / 1 = Weekender / 2 = Offroader
+			var varDriving = $("#howdrivejeepslidercontainer").slider('option', 'value');
 			
-			//console.log('Driving: ' + varDriving);
+			console.log('Driving: ' + varDriving);
 
 			//Daily Driver - add to points array [5, 5, 2, 2, 2]
-			if (varDriving === 1)
+			if (varDriving === 0)
 			{
+				console.log('dailydriver');
 				for (var i = 0; i < dailydriverArray.length; i++)
 				{
 					pointsArray[i] += dailydriverArray[i];
@@ -1068,8 +1071,9 @@
 			}
 
 			//Weekender - add to points array [3, 3, 3, 3, 3]
-			if (varDriving === 2)
+			if (varDriving === 1)
 			{
+				console.log('weekender');
 				for (var i = 0; i < weekenderArray.length; i++)
 				{
 					pointsArray[i] += weekenderArray[i];
@@ -1077,8 +1081,9 @@
 			}
 
 			//Offroader - add to points array [1, 1, 4, 5, 5]
-			if (varDriving === 3)
+			if (varDriving === 2)
 			{
+				console.log('offroader');
 				for (var i = 0; i < offroaderArray.length; i++)
 				{
 					pointsArray[i] += offroaderArray[i];
@@ -1087,14 +1092,15 @@
 			
 			//Open Air Question
 			//Slider from jQuery UI library
-			//Get value of Open Air question - 1 = Not Important / 2 = Occasionally / 3 = Must Have
+			//Get value of Open Air question - 0 = Not Important / 1 = Occasionally / 2 = Must Have
 			var varConvertibility = Number($("#convertibilityslidercontainer").slider('option', 'value'));
 			
-			//console.log("Convertibility: " + varConvertibility);
+			console.log("Convertibility: " + varConvertibility);
 			
 			//Not Important - add to points array [1, 1, 1, 1, 1]
-			if (varConvertibility === 1)
+			if (varConvertibility === 0)
 			{
+				console.log('notimportant');
 				for (var i = 0; i < convertibilitynotimportantArray.length; i++)
 				{
 					pointsArray[i] += convertibilitynotimportantArray[i];
@@ -1102,8 +1108,9 @@
 			}	
 
 			//Occasionally - add to points array [0, 2, 3, 2, 3]
-			if (varConvertibility === 2)
+			if (varConvertibility === 1)
 			{
+				console.log('occasionally');
 				for (var i = 0; i < convertibilityoccasionallyArray.length; i++)
 				{
 					pointsArray[i] += convertibilityoccasionallyArray[i];
@@ -1111,8 +1118,9 @@
 			}	
 			
 			//Must Fold Down - add to points array [0, 0, 5, 0, 5]
-			if (varConvertibility === 3)
+			if (varConvertibility === 2)
 			{
+				console.log('musthave');
 				for (var i = 0; i < convertibilitymusthaveArray.length; i++)
 				{
 					pointsArray[i] += convertibilitymusthaveArray[i];
@@ -1151,7 +1159,7 @@
 			}
 			
 			console.log(myProductObjectArray);
-			
+			console.log(pointsArray);
 			//initialize results object
 			var myResultsObject = [];
 			
